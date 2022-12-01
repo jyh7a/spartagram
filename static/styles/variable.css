@@ -1,0 +1,14 @@
+:root {
+    font-size: 16px;
+    --main-font-size: 2rem;
+    --main-font-color: #cc1e1e;
+}
+
+header {
+    --main-font-color: white;
+    --main-font-families: 'Monoton', cursive;
+}
+
+footer {
+    --main-font-color: #8b8b8b;
+}

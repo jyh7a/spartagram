@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #e8344e;
+    padding: 15px;
+    letter-spacing: 0.1rem;
+}
+
+header h2 {
+    color: var(--main-font-color);
+    font-size: 2rem;
+    font-family: 'Bangers', cursive;
+}
+
+header nav {
+
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    margin-right: 1rem;
+}
+
+header li:last-child {
+    margin: 0;
+}
+
+header a {
+    color: var(--main-font-color);
+}

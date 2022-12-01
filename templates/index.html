@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/fonts.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/variable.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/mainSection.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/footer.css') }}">
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>sparta_gram</title>
+</head>
+<body>
+
+<!-- header -->
+{% include "components/header.html" %}
+
+<!-- content -->
+<section id="mainSection">
+    {% if component_name == 'groups' %}
+    {% include "components/groups.html" %}
+    {% elif component_name == 'users' %}
+    {% include "components/users.html" %}
+    {% else %}
+    {% include "components/photos.html" %}
+    {% endif %}
+</section>
+
+
+<!-- footer -->
+{% include "components/footer.html" %}
+
+</body>
+<script>
+</script>
+</html>

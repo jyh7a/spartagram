@@ -1,0 +1,35 @@
+#users {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: #eeeeee 4px 5px 5px 0px;
+}
+
+
+#users th {
+    padding: 1rem;
+    text-align: left;
+    background-color: #6c7ae0;
+    color: white;
+    font-weight: bold;
+}
+
+#users td {
+    padding: 1rem;
+    text-align: left;
+    color: gray;
+    vertical-align: middle;
+}
+
+#users td img{
+    height: 70px;
+}
+
+#users tr:nth-child(even) {
+    background-color: #f8f6ff;
+}
+
+#users tr:hover {
+    background-color: #dfd6ff;
+}

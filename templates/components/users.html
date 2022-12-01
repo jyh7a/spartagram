@@ -1,0 +1,47 @@
+<table id="users">
+    <thead>
+    <tr>
+        <th>이름</th>
+        <th>유저이름(Nickname)</th>
+        <th>이메일</th>
+        <th>사진</th>
+        <th>그룹</th>
+        <th>유저 생성일</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script>
+    const user_tbody = document.querySelector('#users tbody');
+    let tr = ``
+    axios.get('/user')
+        .then(function (response) {
+            // 성공 핸들링
+            console.log(response);
+            response.data.map((user) => {
+
+             tr += `
+                 <tr>
+                    <td>${user[2]}${user[1]}</td>
+                    <td>${user[3]}</td>
+                    <td>${user[4]}</td>
+                    <td><img src="${user[5]}" alt="${user[5]}"></td>
+                    <td>${user[10]}</td>
+                    <td>${user[8]}</td>
+                </tr>
+            `
+            })
+              user_tbody.innerHTML = tr
+        })
+        .catch(function (error) {
+            // 에러 핸들링
+            console.log(error);
+        })
+        .then(function () {
+            // 항상 실행되는 영역
+        });
+
+</script>

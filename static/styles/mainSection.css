@@ -1,0 +1,9 @@
+@import url("group.css");
+@import url("users.css");
+@import url("photos.css");
+
+#mainSection {
+    height: calc(100vh - 124px);
+    padding: 3rem;
+    overflow-y: scroll;
+}

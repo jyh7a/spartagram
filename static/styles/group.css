@@ -1,0 +1,55 @@
+#group h2 {
+    font-size: var(--main-font-size);
+    font-weight: bold;
+    color: var(--main-font-color);
+    margin: 0 0 3rem;
+}
+
+#group .collapsible {
+    background: linear-gradient(29deg, rgba(2, 0, 36, 1) 0%, rgb(144 8 58) 0%, rgb(73 38 33) 100%);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 1.5rem;
+}
+
+#group .collapsible:last-of-type {
+    margin-bottom: 0px;
+}
+
+#group .active, .collapsible:hover {
+    background-color: #555;
+}
+
+#group .content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin-top: -1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+#group .content:last-of-type {
+    margin-top: 0;
+}
+
+#group li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+#group li:last-child {
+    margin-bottom: 0;
+}
+
+
+

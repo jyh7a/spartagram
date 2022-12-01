@@ -1,0 +1,38 @@
+<div id="group">
+    <h2>Groups</h2>
+
+    <button type="button" class="collapsible">Node</button>
+    <div class="content">
+        <ul>
+            <li>
+                <div class="name">정영훈</div>
+                <div class="created-at">2022-11-10 23:44:10</div>
+            </li>
+            <li>
+                <div class="name">정영훈</div>
+                <div class="created-at">2022-11-10 23:44:10</div>
+            </li>
+            <li>
+                <div class="name">정영훈</div>
+                <div class="created-at">2022-11-10 23:44:10</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            const content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>

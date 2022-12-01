@@ -1,0 +1,12 @@
+footer {
+    background: #191a1b;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    font-size: 0.7rem;
+    color: var(--main-font-color);
+}
